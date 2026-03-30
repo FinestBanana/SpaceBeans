@@ -3,7 +3,7 @@
 " Description: A really dark color scheme based on coffee and fruit colors
 " Author: FinestBanana <feinstebanane@gmail.com>
 " Source: https://github.com/FinestBanana/SpaceBeans
-" Last Modified: 11 Mar 2026
+" Last Modified: 30 Mar 2026
 " -----------------------------------------------------------------------------
 
 " Supporting code -------------------------------------------------------------
@@ -86,50 +86,53 @@ let s:is_dark=(&background == 'dark')
 let s:sb = {}
 
 " fill it with absolute colors
-let s:sb.dark0_hard  = ['#0d0402', 0]       " 13, 4, 2
-let s:sb.dark0       = ['#140603', 232]     " 20, 6, 3
+let s:sb.dark0_hard  = ['#060201', 0]       " 6, 2, 1
+let s:sb.dark0       = ['#120502', 232]     " 18, 5, 2
 let s:sb.dark0_soft  = ['#1d0b05', 233]     " 29, 11, 5
-let s:sb.dark1       = ['#250f08', 234]     " 37, 15, 8
-let s:sb.dark2       = ['#2e140b', 235]     " 46, 20, 11
-let s:sb.dark3       = ['#371a0f', 236]     " 55, 26, 15
-let s:sb.dark4       = ['#401f13', 237]     " 64, 31, 19
-let s:sb.dark4_256   = ['#401f13', 237]     " 64, 31, 19
+let s:sb.dark1       = ['#281109', 234]     " 40, 17, 9
+let s:sb.dark2       = ['#33170d', 235]     " 51, 23, 13
+let s:sb.dark3       = ['#3e1d12', 236]     " 62, 29, 18
+let s:sb.dark4       = ['#492416', 237]     " 73, 36, 22
+let s:sb.dark4_256   = ['#492416', 237]     " 73, 36, 22
 
 let s:sb.gray_248    = ['#a08d83', 248]     " 160, 141, 131
-let s:sb.gray_242    = ['#84746c', 242]     " 132, 116, 108
+let s:sb.gray_236    = ['#362f2b', 236]     " 54, 47, 43
 
-let s:sb.light0_hard = ['#bea287', 180]     " 190, 162, 135
-let s:sb.light0      = ['#b79c82', 144]     " 183, 156, 130
-let s:sb.light0_soft = ['#ae947b', 138]     " 174, 148, 123
-let s:sb.light1      = ['#a58c75', 95]      " 165, 140, 117
-let s:sb.light2      = ['#9c856f', 137]     " 156, 133, 111
-let s:sb.light3      = ['#937d68', 102]     " 147, 125, 104
-let s:sb.light4      = ['#8b7662', 101]     " 139, 118, 98
-let s:sb.light4_256  = ['#8b7662', 101]     " 139, 118, 98
+let s:sb.fgdark0     = ['#d0c7a1', 187]     " 208, 199, 161
+let s:sb.fglight0    = ['#ebe3c3', 253]     " 235, 227, 195
+
+let s:sb.light0_hard = ['#362a1c', 235]     " 54, 42, 28
+let s:sb.light0      = ['#3e3021', 236]     " 62, 48, 33
+let s:sb.light0_soft = ['#463625', 237]     " 70, 54, 37
+let s:sb.light1      = ['#4e3d2a', 238]     " 78, 61, 42
+let s:sb.light2      = ['#56432f', 239]     " 86, 67, 47
+let s:sb.light3      = ['#5e4a34', 240]     " 94, 74, 52
+let s:sb.light4      = ['#665139', 241]     " 102, 81, 57
+let s:sb.light4_256  = ['#665139', 241]     " 102, 81, 57
 
 let s:sb.bright_red     = ['#eb666a', 167]     " 235, 102, 106
 let s:sb.bright_green   = ['#83ae65', 107]     " 131, 174, 101
 let s:sb.bright_yellow  = ['#eed455', 228]     " 238, 212, 85
-let s:sb.bright_blue    = ['#7f9ff9', 111]     " 127, 159, 249
+let s:sb.bright_blue    = ['#608ef7', 69]      " 96, 142, 247
 let s:sb.bright_purple  = ['#c78cad', 175]     " 199, 140, 173
 let s:sb.bright_cyan    = ['#4cccba', 80]      " 76, 204, 186
-let s:sb.bright_orange  = ['#e68e32', 215]     " 230, 142, 50
+let s:sb.bright_orange  = ['#f99a37', 215]     " 249, 154, 55
 
-let s:sb.neutral_red    = ['#e22e37', 161]     " 226, 46, 55
-let s:sb.neutral_green  = ['#5f8049', 65]      " 95, 128, 73
-let s:sb.neutral_yellow = ['#ffe24c', 221]     " 255, 226, 76
-let s:sb.neutral_blue   = ['#5387f7', 69]      " 83, 135, 247
-let s:sb.neutral_purple = ['#533045', 96]      " 83, 48, 69
-let s:sb.neutral_cyan   = ['#00fee4', 50]      " 0, 254, 228
-let s:sb.neutral_orange = ['#ff9800', 208]     " 255, 152, 0
+let s:sb.neutral_red    = ['#ee7c7f', 203]     " 238, 124, 127
+let s:sb.neutral_green  = ['#8bbb6a', 107]     " 139, 187, 106
+let s:sb.neutral_yellow = ['#f9dd4a', 221]     " 249, 221, 74
+let s:sb.neutral_blue   = ['#6c95fa', 69]      " 108, 149, 250
+let s:sb.neutral_purple = ['#d09cb9', 181]     " 208, 156, 185
+let s:sb.neutral_cyan   = ['#4cdcc7', 80]      " 76, 220, 199
+let s:sb.neutral_orange = ['#fba151', 215]     " 251, 161, 81
 
-let s:sb.faded_red      = ['#66060c', 52]      " 102, 6, 12
-let s:sb.faded_green    = ['#25351b', 22]      " 37, 53, 27
-let s:sb.faded_yellow   = ['#383000', 136]     " 56, 48, 0
-let s:sb.faded_blue     = ['#0a2e66', 17]      " 10, 46, 102
-let s:sb.faded_purple   = ['#452639', 53]      " 69, 38, 57
-let s:sb.faded_cyan     = ['#003731', 23]      " 0, 55, 49
-let s:sb.faded_orange   = ['#4a2800', 94]      " 74, 40, 0
+let s:sb.faded_red      = ['#f29092', 210]     " 242, 144, 146
+let s:sb.faded_green    = ['#96cc6f', 113]     " 150, 204, 111
+let s:sb.faded_yellow   = ['#fee578', 222]     " 254, 229, 120
+let s:sb.faded_blue     = ['#7c9ffd', 111]     " 124, 159, 253
+let s:sb.faded_purple   = ['#d9acc4', 182]     " 217, 172, 196
+let s:sb.faded_cyan     = ['#48ecd5', 86]      " 72, 236, 213
+let s:sb.faded_orange   = ['#fdab6b', 215]     " 253, 171, 107
 
 " }}}
 " Setup Emphasis: {{{
@@ -182,11 +185,11 @@ if s:is_dark
 
   let s:gray = s:sb.gray_248
 
-  let s:fg0 = s:sb.light0
-  let s:fg1 = s:sb.light1
-  let s:fg2 = s:sb.light2
-  let s:fg3 = s:sb.light3
-  let s:fg4 = s:sb.light4
+  let s:fg0 = s:sb.fgdark0
+  let s:fg1 = s:sb.fgdark0
+  let s:fg2 = s:sb.fgdark0
+  let s:fg3 = s:sb.fgdark0
+  let s:fg4 = s:sb.fgdark0
 
   let s:fg4_256 = s:sb.light4_256
 
@@ -210,13 +213,13 @@ else
   let s:bg3  = s:sb.light3
   let s:bg4  = s:sb.light4
 
-  let s:gray = s:sb.gray_242
+  let s:gray = s:sb.gray_236
 
-  let s:fg0 = s:sb.dark0
-  let s:fg1 = s:sb.dark1
-  let s:fg2 = s:sb.dark2
-  let s:fg3 = s:sb.dark3
-  let s:fg4 = s:sb.dark4
+  let s:fg0 = s:sb.fglight0
+  let s:fg1 = s:sb.fglight0
+  let s:fg2 = s:sb.fglight0
+  let s:fg3 = s:sb.fglight0
+  let s:fg4 = s:sb.fglight0
 
   let s:fg4_256 = s:sb.dark4_256
 
@@ -723,12 +726,12 @@ endif
 if !exists('g:rbpt_colorpairs')
   let g:rbpt_colorpairs =
     \ [
-      \ ['blue', '#5387f7'], ['magenta', '#533045'],
-      \ ['red',  '#e22e37'], ['172',     '#ff9800']
+      \ ['blue', '#6c95fa'], ['magenta', '#d09cb9'],
+      \ ['red',  '#ee7c7f'], ['172',     '#fba151']
     \ ]
 endif
 
-let g:rainbow_guifgs = [ '#ff9800', '#e22e37', '#533045', '#5387f7' ]
+let g:rainbow_guifgs = [ '#fba151', '#ee7c7f', '#d09cb9', '#6c95fa' ]
 let g:rainbow_ctermfgs = [ '172', 'red', 'magenta', 'blue' ]
 
 if !exists('g:rainbow_conf')
